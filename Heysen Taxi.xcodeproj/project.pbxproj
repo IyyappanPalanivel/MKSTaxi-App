@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		705D85D61EC1303545880F50 /* Pods_Heysen_Taxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769D13343C1AAE8EA647BFBF /* Pods_Heysen_Taxi.framework */; };
+		9040C838283A993700111602 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C837283A993700111602 /* ProgressBar.swift */; };
+		9040C83A283A9A8D00111602 /* 8771-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 9040C839283A9A8D00111602 /* 8771-loading.json */; };
+		BA314B3427F20EE100433958 /* HistoryTvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA314B3327F20EE100433958 /* HistoryTvc.swift */; };
+		BA3B283827EB736200BDA152 /* EditProfileVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B283727EB736200BDA152 /* EditProfileVc.swift */; };
+		BA3B283B27EB770500BDA152 /* HomePageVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B283A27EB770500BDA152 /* HomePageVm.swift */; };
+		BA3B283F27EB7B9B00BDA152 /* BookingVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B283E27EB7B9B00BDA152 /* BookingVc.swift */; };
+		BA3B284327EB7D8400BDA152 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B284227EB7D8400BDA152 /* BookingModel.swift */; };
+		BA3B284627EB86F700BDA152 /* FareListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B284527EB86F700BDA152 /* FareListModel.swift */; };
+		BA3B284927EB8AAA00BDA152 /* HomePageTvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B284827EB8AAA00BDA152 /* HomePageTvc.swift */; };
+		BA3B9BCC27FE03ED0059901F /* EstimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B9BCB27FE03ED0059901F /* EstimationModel.swift */; };
+		BA3C05B227FB705500BA75B5 /* AddAddressVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C05B127FB705500BA75B5 /* AddAddressVc.swift */; };
+		BA3C0A2127E8D84B0077F749 /* FAQVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C0A2027E8D84B0077F749 /* FAQVc.swift */; };
+		BA3C0A2C27E8DB030077F749 /* FAQVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C0A2B27E8DB030077F749 /* FAQVm.swift */; };
+		BA3C0A2F27E8DD190077F749 /* FAQModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C0A2E27E8DD190077F749 /* FAQModel.swift */; };
+		BA40BDD027E70167001BE4A2 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BDCF27E70167001BE4A2 /* BaseModel.swift */; };
+		BA40BDD727E7035F001BE4A2 /* LoginVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BDD627E7035F001BE4A2 /* LoginVm.swift */; };
+		BA40BDDA27E70AE0001BE4A2 /* SignUpVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BDD927E70AE0001BE4A2 /* SignUpVm.swift */; };
+		BA40BDDD27E7145E001BE4A2 /* OtpVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BDDC27E7145E001BE4A2 /* OtpVm.swift */; };
+		BA40BDE027E7221A001BE4A2 /* ProfileVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BDDF27E7221A001BE4A2 /* ProfileVm.swift */; };
+		BA40BDE427E72458001BE4A2 /* BookingVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BDE327E72458001BE4A2 /* BookingVm.swift */; };
+		BA415D5F27EA27E2005889DE /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA415D5E27EA27E2005889DE /* ProfileModel.swift */; };
+		BA415D6227EA2BAC005889DE /* ProfileVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA415D6127EA2BAC005889DE /* ProfileVc.swift */; };
+		BA415D6627EA3011005889DE /* TarrifVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA415D6527EA3011005889DE /* TarrifVc.swift */; };
+		BA415D6A27EA3223005889DE /* TarrifModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA415D6927EA3223005889DE /* TarrifModel.swift */; };
+		BA415D6F27EA3977005889DE /* TerrifTvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA415D6E27EA3977005889DE /* TerrifTvc.swift */; };
+		BA4FF73A27EEF78B0014690A /* AddressLocVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4FF73927EEF78B0014690A /* AddressLocVc.swift */; };
+		BA4FF73D27EEF7C80014690A /* AddressLocTvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4FF73C27EEF7C80014690A /* AddressLocTvc.swift */; };
+		BA4FF74127EEFB110014690A /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4FF74027EEFB110014690A /* LocationModel.swift */; };
+		BA4FF74427EF356F0014690A /* FAQTvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4FF74327EF356F0014690A /* FAQTvc.swift */; };
+		BA5015E127F3808C00BD3058 /* ConfirmBookingVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5015E027F3808C00BD3058 /* ConfirmBookingVc.swift */; };
+		BA69059D27E4FFE1007D8BD5 /* HomePageVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69059C27E4FFE1007D8BD5 /* HomePageVc.swift */; };
+		BA6905A027E4FFFB007D8BD5 /* HomePageContentVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69059F27E4FFFB007D8BD5 /* HomePageContentVc.swift */; };
+		BAC9225B2813CF940066B219 /* UIview+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC9225A2813CF940066B219 /* UIview+Ext.swift */; };
+		BAE8564D2942D47B00CC2A0E /* ConfirmBookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE8564C2942D47B00CC2A0E /* ConfirmBookingModel.swift */; };
+		BAEB737327E248AD004EEE65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEB737127E248AD004EEE65 /* Main.storyboard */; };
+		BAEB737527E248AE004EEE65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEB737427E248AE004EEE65 /* Assets.xcassets */; };
+		BAEB737827E248AE004EEE65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEB737627E248AE004EEE65 /* LaunchScreen.storyboard */; };
+		BAEB73B627E24AA4004EEE65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73B327E24AA4004EEE65 /* AppDelegate.swift */; };
+		BAEB73B727E24AA4004EEE65 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73B427E24AA4004EEE65 /* ApiManager.swift */; };
+		BAEB73B827E24AA4004EEE65 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73B527E24AA4004EEE65 /* Switcher.swift */; };
+		BAEB73BF27E24B08004EEE65 /* Userdefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73BB27E24B08004EEE65 /* Userdefaults+Ext.swift */; };
+		BAEB73C027E24B08004EEE65 /* UIViecontrollers+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73BC27E24B08004EEE65 /* UIViecontrollers+Ext.swift */; };
+		BAEB73C127E24B08004EEE65 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73BD27E24B08004EEE65 /* Notification.swift */; };
+		BAEB73C227E24B08004EEE65 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73BE27E24B08004EEE65 /* AppStoryboard.swift */; };
+		BAEB73E227E24BC3004EEE65 /* ApiclientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73DA27E24BC3004EEE65 /* ApiclientError.swift */; };
+		BAEB73E327E24BC3004EEE65 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73DB27E24BC3004EEE65 /* Resources.swift */; };
+		BAEB73E427E24BC3004EEE65 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73DC27E24BC3004EEE65 /* LocationManager.swift */; };
+		BAEB73E527E24BC3004EEE65 /* Alerter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73DD27E24BC3004EEE65 /* Alerter.swift */; };
+		BAEB73E627E24BC3004EEE65 /* MultipleImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73DE27E24BC3004EEE65 /* MultipleImagePicker.swift */; };
+		BAEB73E727E24BC3004EEE65 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73DF27E24BC3004EEE65 /* ImagePicker.swift */; };
+		BAEB73E827E24BC3004EEE65 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73E027E24BC3004EEE65 /* Constant.swift */; };
+		BAEB73E927E24BC3004EEE65 /* UrlNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73E127E24BC3004EEE65 /* UrlNetwork.swift */; };
+		BAEB73EE27E25443004EEE65 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEB73ED27E25443004EEE65 /* Color.xcassets */; };
+		BAEB740027E258E0004EEE65 /* LoginVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB73FF27E258E0004EEE65 /* LoginVc.swift */; };
+		BAEB740327E258F2004EEE65 /* SignUPVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB740227E258F2004EEE65 /* SignUPVc.swift */; };
+		BAEB740627E25901004EEE65 /* OTPVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB740527E25901004EEE65 /* OTPVc.swift */; };
+		BAEB741827E25DE5004EEE65 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEB741727E25DE5004EEE65 /* Home.storyboard */; };
+		BAEB741D27E260CA004EEE65 /* HomeTBc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB741C27E260CA004EEE65 /* HomeTBc.swift */; };
+		BAFAF33E284D017200810BC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAFAF33D284D017200810BC0 /* GoogleService-Info.plist */; };
+		BAFE4FC02829896B007C145C /* ConatctUsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFE4FBF2829896B007C145C /* ConatctUsVc.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B2B5243111A8BFC0B693F0F /* Pods-MKSTaxi App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKSTaxi App.release.xcconfig"; path = "Target Support Files/Pods-MKSTaxi App/Pods-MKSTaxi App.release.xcconfig"; sourceTree = "<group>"; };
+		3E8CA6ED054722CEAD6DB550 /* Pods-Heysen Taxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heysen Taxi.release.xcconfig"; path = "Target Support Files/Pods-Heysen Taxi/Pods-Heysen Taxi.release.xcconfig"; sourceTree = "<group>"; };
+		4F4988DD492C4823AB0F2B34 /* Pods-Heysen Taxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heysen Taxi.debug.xcconfig"; path = "Target Support Files/Pods-Heysen Taxi/Pods-Heysen Taxi.debug.xcconfig"; sourceTree = "<group>"; };
+		769D13343C1AAE8EA647BFBF /* Pods_Heysen_Taxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heysen_Taxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9040C837283A993700111602 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		9040C839283A9A8D00111602 /* 8771-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "8771-loading.json"; sourceTree = "<group>"; };
+		BA314B3327F20EE100433958 /* HistoryTvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTvc.swift; sourceTree = "<group>"; };
+		BA3B283727EB736200BDA152 /* EditProfileVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVc.swift; sourceTree = "<group>"; };
+		BA3B283A27EB770500BDA152 /* HomePageVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVm.swift; sourceTree = "<group>"; };
+		BA3B283E27EB7B9B00BDA152 /* BookingVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingVc.swift; sourceTree = "<group>"; };
+		BA3B284227EB7D8400BDA152 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+		BA3B284527EB86F700BDA152 /* FareListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareListModel.swift; sourceTree = "<group>"; };
+		BA3B284827EB8AAA00BDA152 /* HomePageTvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTvc.swift; sourceTree = "<group>"; };
+		BA3B9BCB27FE03ED0059901F /* EstimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimationModel.swift; sourceTree = "<group>"; };
+		BA3C05B127FB705500BA75B5 /* AddAddressVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressVc.swift; sourceTree = "<group>"; };
+		BA3C0A2027E8D84B0077F749 /* FAQVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQVc.swift; sourceTree = "<group>"; };
+		BA3C0A2B27E8DB030077F749 /* FAQVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQVm.swift; sourceTree = "<group>"; };
+		BA3C0A2E27E8DD190077F749 /* FAQModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQModel.swift; sourceTree = "<group>"; };
+		BA40BDCF27E70167001BE4A2 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		BA40BDD627E7035F001BE4A2 /* LoginVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVm.swift; sourceTree = "<group>"; };
+		BA40BDD927E70AE0001BE4A2 /* SignUpVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVm.swift; sourceTree = "<group>"; };
+		BA40BDDC27E7145E001BE4A2 /* OtpVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpVm.swift; sourceTree = "<group>"; };
+		BA40BDDF27E7221A001BE4A2 /* ProfileVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVm.swift; sourceTree = "<group>"; };
+		BA40BDE327E72458001BE4A2 /* BookingVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingVm.swift; sourceTree = "<group>"; };
+		BA415D5E27EA27E2005889DE /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		BA415D6127EA2BAC005889DE /* ProfileVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVc.swift; sourceTree = "<group>"; };
+		BA415D6527EA3011005889DE /* TarrifVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarrifVc.swift; sourceTree = "<group>"; };
+		BA415D6927EA3223005889DE /* TarrifModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarrifModel.swift; sourceTree = "<group>"; };
+		BA415D6E27EA3977005889DE /* TerrifTvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrifTvc.swift; sourceTree = "<group>"; };
+		BA4FF73927EEF78B0014690A /* AddressLocVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressLocVc.swift; sourceTree = "<group>"; };
+		BA4FF73C27EEF7C80014690A /* AddressLocTvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressLocTvc.swift; sourceTree = "<group>"; };
+		BA4FF74027EEFB110014690A /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		BA4FF74327EF356F0014690A /* FAQTvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTvc.swift; sourceTree = "<group>"; };
+		BA5015E027F3808C00BD3058 /* ConfirmBookingVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookingVc.swift; sourceTree = "<group>"; };
+		BA5FB61D284BC6B3000EADBE /* Heysen Taxi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Heysen Taxi.entitlements"; sourceTree = "<group>"; };
+		BA69059C27E4FFE1007D8BD5 /* HomePageVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVc.swift; sourceTree = "<group>"; };
+		BA69059F27E4FFFB007D8BD5 /* HomePageContentVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageContentVc.swift; sourceTree = "<group>"; };
+		BAC9225A2813CF940066B219 /* UIview+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIview+Ext.swift"; sourceTree = "<group>"; };
+		BAE8564C2942D47B00CC2A0E /* ConfirmBookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookingModel.swift; sourceTree = "<group>"; };
+		BAEB736827E248AD004EEE65 /* Heysen Taxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heysen Taxi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAEB737227E248AD004EEE65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAEB737427E248AE004EEE65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAEB737727E248AE004EEE65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAEB737927E248AE004EEE65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEB73B327E24AA4004EEE65 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAEB73B427E24AA4004EEE65 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		BAEB73B527E24AA4004EEE65 /* Switcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		BAEB73BB27E24B08004EEE65 /* Userdefaults+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Userdefaults+Ext.swift"; sourceTree = "<group>"; };
+		BAEB73BC27E24B08004EEE65 /* UIViecontrollers+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViecontrollers+Ext.swift"; sourceTree = "<group>"; };
+		BAEB73BD27E24B08004EEE65 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		BAEB73BE27E24B08004EEE65 /* AppStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		BAEB73DA27E24BC3004EEE65 /* ApiclientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiclientError.swift; sourceTree = "<group>"; };
+		BAEB73DB27E24BC3004EEE65 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		BAEB73DC27E24BC3004EEE65 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BAEB73DD27E24BC3004EEE65 /* Alerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerter.swift; sourceTree = "<group>"; };
+		BAEB73DE27E24BC3004EEE65 /* MultipleImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleImagePicker.swift; sourceTree = "<group>"; };
+		BAEB73DF27E24BC3004EEE65 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BAEB73E027E24BC3004EEE65 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		BAEB73E127E24BC3004EEE65 /* UrlNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlNetwork.swift; sourceTree = "<group>"; };
+		BAEB73ED27E25443004EEE65 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		BAEB73FF27E258E0004EEE65 /* LoginVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVc.swift; sourceTree = "<group>"; };
+		BAEB740227E258F2004EEE65 /* SignUPVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPVc.swift; sourceTree = "<group>"; };
+		BAEB740527E25901004EEE65 /* OTPVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVc.swift; sourceTree = "<group>"; };
+		BAEB741727E25DE5004EEE65 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		BAEB741C27E260CA004EEE65 /* HomeTBc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTBc.swift; sourceTree = "<group>"; };
+		BAFAF33D284D017200810BC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAFE4FBF2829896B007C145C /* ConatctUsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConatctUsVc.swift; sourceTree = "<group>"; };
+		EDB6B4973ADD113FB62B8D0A /* Pods-MKSTaxi App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKSTaxi App.debug.xcconfig"; path = "Target Support Files/Pods-MKSTaxi App/Pods-MKSTaxi App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAEB736527E248AD004EEE65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705D85D61EC1303545880F50 /* Pods_Heysen_Taxi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B7517E325F15E33A37C1D10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				769D13343C1AAE8EA647BFBF /* Pods_Heysen_Taxi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA3B283D27EB7B7F00BDA152 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				BA3B283E27EB7B9B00BDA152 /* BookingVc.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		BA3C0A1F27E8D7BD0077F749 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BA3C0A2027E8D84B0077F749 /* FAQVc.swift */,
+				BA415D6127EA2BAC005889DE /* ProfileVc.swift */,
+				BA3B283727EB736200BDA152 /* EditProfileVc.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BA3C0A2427E8DA510077F749 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA3C0A2B27E8DB030077F749 /* FAQVm.swift */,
+				BA3B283A27EB770500BDA152 /* HomePageVm.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BA40BDD227E70178001BE4A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA40BDCF27E70167001BE4A2 /* BaseModel.swift */,
+				BA3C0A2E27E8DD190077F749 /* FAQModel.swift */,
+				BA415D5E27EA27E2005889DE /* ProfileModel.swift */,
+				BA415D6927EA3223005889DE /* TarrifModel.swift */,
+				BA3B284227EB7D8400BDA152 /* BookingModel.swift */,
+				BA3B284527EB86F700BDA152 /* FareListModel.swift */,
+				BA4FF74027EEFB110014690A /* LocationModel.swift */,
+				BA3B9BCB27FE03ED0059901F /* EstimationModel.swift */,
+				BAE8564C2942D47B00CC2A0E /* ConfirmBookingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA40BDD427E70321001BE4A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA40BDE227E7243A001BE4A2 /* Booking */,
+				BA40BDD527E70346001BE4A2 /* Auth */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BA40BDD527E70346001BE4A2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				BA3C0A2427E8DA510077F749 /* Home */,
+				BA40BDD627E7035F001BE4A2 /* LoginVm.swift */,
+				BA40BDD927E70AE0001BE4A2 /* SignUpVm.swift */,
+				BA40BDDC27E7145E001BE4A2 /* OtpVm.swift */,
+				BA40BDDF27E7221A001BE4A2 /* ProfileVm.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		BA40BDE227E7243A001BE4A2 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				BA40BDE327E72458001BE4A2 /* BookingVm.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		BA415D6427EA2FD0005889DE /* Traffif */ = {
+			isa = PBXGroup;
+			children = (
+				BA415D6527EA3011005889DE /* TarrifVc.swift */,
+			);
+			path = Traffif;
+			sourceTree = "<group>";
+		};
+		BA415D6C27EA3954005889DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BA415D6D27EA395F005889DE /* TableView */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BA415D6D27EA395F005889DE /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				BA415D6E27EA3977005889DE /* TerrifTvc.swift */,
+				BA3B284827EB8AAA00BDA152 /* HomePageTvc.swift */,
+				BA4FF73C27EEF7C80014690A /* AddressLocTvc.swift */,
+				BA4FF74327EF356F0014690A /* FAQTvc.swift */,
+				BA314B3327F20EE100433958 /* HistoryTvc.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		BAEB735F27E248AD004EEE65 = {
+			isa = PBXGroup;
+			children = (
+				BAEB736A27E248AD004EEE65 /* Heysen Taxi */,
+				BAEB736927E248AD004EEE65 /* Products */,
+				E31D41D5C04DBD5E20BEB99B /* Pods */,
+				8B7517E325F15E33A37C1D10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		BAEB736927E248AD004EEE65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB736827E248AD004EEE65 /* Heysen Taxi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAEB736A27E248AD004EEE65 /* Heysen Taxi */ = {
+			isa = PBXGroup;
+			children = (
+				BA5FB61D284BC6B3000EADBE /* Heysen Taxi.entitlements */,
+				BAEB737427E248AE004EEE65 /* Assets.xcassets */,
+				BAEB73ED27E25443004EEE65 /* Color.xcassets */,
+				9040C839283A9A8D00111602 /* 8771-loading.json */,
+				BAFAF33D284D017200810BC0 /* GoogleService-Info.plist */,
+				BAEB737927E248AE004EEE65 /* Info.plist */,
+				BAEB73BA27E24AC1004EEE65 /* Extension */,
+				BAEB73B227E24A6C004EEE65 /* Manager */,
+				BAEB73C427E24B36004EEE65 /* Helper */,
+				BAEB73EB27E24BF3004EEE65 /* Storyboards */,
+				BA40BDD227E70178001BE4A2 /* Model */,
+				BA40BDD427E70321001BE4A2 /* ViewModel */,
+				BA415D6C27EA3954005889DE /* Cells */,
+				BAEB73FE27E258C6004EEE65 /* ViewController */,
+			);
+			path = "Heysen Taxi";
+			sourceTree = "<group>";
+		};
+		BAEB73B227E24A6C004EEE65 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB73B427E24AA4004EEE65 /* ApiManager.swift */,
+				BAEB73B327E24AA4004EEE65 /* AppDelegate.swift */,
+				BAEB73B527E24AA4004EEE65 /* Switcher.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BAEB73BA27E24AC1004EEE65 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB73BE27E24B08004EEE65 /* AppStoryboard.swift */,
+				BAEB73BD27E24B08004EEE65 /* Notification.swift */,
+				BAEB73BC27E24B08004EEE65 /* UIViecontrollers+Ext.swift */,
+				BAEB73BB27E24B08004EEE65 /* Userdefaults+Ext.swift */,
+				BAC9225A2813CF940066B219 /* UIview+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BAEB73C427E24B36004EEE65 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB73DD27E24BC3004EEE65 /* Alerter.swift */,
+				BAEB73DA27E24BC3004EEE65 /* ApiclientError.swift */,
+				BAEB73E027E24BC3004EEE65 /* Constant.swift */,
+				BAEB73DF27E24BC3004EEE65 /* ImagePicker.swift */,
+				BAEB73DC27E24BC3004EEE65 /* LocationManager.swift */,
+				BAEB73DE27E24BC3004EEE65 /* MultipleImagePicker.swift */,
+				BAEB73DB27E24BC3004EEE65 /* Resources.swift */,
+				BAEB73E127E24BC3004EEE65 /* UrlNetwork.swift */,
+				9040C837283A993700111602 /* ProgressBar.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BAEB73EB27E24BF3004EEE65 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB737627E248AE004EEE65 /* LaunchScreen.storyboard */,
+				BAEB737127E248AD004EEE65 /* Main.storyboard */,
+				BAEB741727E25DE5004EEE65 /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BAEB73FE27E258C6004EEE65 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB741A27E26097004EEE65 /* Main */,
+				BAEB741B27E260A1004EEE65 /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BAEB741A27E26097004EEE65 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB73FF27E258E0004EEE65 /* LoginVc.swift */,
+				BAEB740227E258F2004EEE65 /* SignUPVc.swift */,
+				BAEB740527E25901004EEE65 /* OTPVc.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BAEB741B27E260A1004EEE65 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA3B283D27EB7B7F00BDA152 /* Booking */,
+				BA415D6427EA2FD0005889DE /* Traffif */,
+				BA3C0A1F27E8D7BD0077F749 /* Profile */,
+				BAEB741C27E260CA004EEE65 /* HomeTBc.swift */,
+				BA4FF73927EEF78B0014690A /* AddressLocVc.swift */,
+				BA69059C27E4FFE1007D8BD5 /* HomePageVc.swift */,
+				BA69059F27E4FFFB007D8BD5 /* HomePageContentVc.swift */,
+				BA5015E027F3808C00BD3058 /* ConfirmBookingVc.swift */,
+				BA3C05B127FB705500BA75B5 /* AddAddressVc.swift */,
+				BAFE4FBF2829896B007C145C /* ConatctUsVc.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E31D41D5C04DBD5E20BEB99B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDB6B4973ADD113FB62B8D0A /* Pods-MKSTaxi App.debug.xcconfig */,
+				1B2B5243111A8BFC0B693F0F /* Pods-MKSTaxi App.release.xcconfig */,
+				4F4988DD492C4823AB0F2B34 /* Pods-Heysen Taxi.debug.xcconfig */,
+				3E8CA6ED054722CEAD6DB550 /* Pods-Heysen Taxi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAEB736727E248AD004EEE65 /* Heysen Taxi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAEB737C27E248AE004EEE65 /* Build configuration list for PBXNativeTarget "Heysen Taxi" */;
+			buildPhases = (
+				2DEE35D8AAAB6E78F7C45B10 /* [CP] Check Pods Manifest.lock */,
+				BAEB736427E248AD004EEE65 /* Sources */,
+				BAEB736527E248AD004EEE65 /* Frameworks */,
+				BAEB736627E248AD004EEE65 /* Resources */,
+				610CE2F974971C3ADCCB6AE5 /* [CP] Embed Pods Frameworks */,
+				09EF16414ECC90DC9E7DBAF5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heysen Taxi";
+			productName = "MKSTaxi App";
+			productReference = BAEB736827E248AD004EEE65 /* Heysen Taxi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAEB736027E248AD004EEE65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BAEB736727E248AD004EEE65 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = BAEB736327E248AD004EEE65 /* Build configuration list for PBXProject "Heysen Taxi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAEB735F27E248AD004EEE65;
+			productRefGroup = BAEB736927E248AD004EEE65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAEB736727E248AD004EEE65 /* Heysen Taxi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAEB736627E248AD004EEE65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEB737827E248AE004EEE65 /* LaunchScreen.storyboard in Resources */,
+				BAEB741827E25DE5004EEE65 /* Home.storyboard in Resources */,
+				BAEB73EE27E25443004EEE65 /* Color.xcassets in Resources */,
+				9040C83A283A9A8D00111602 /* 8771-loading.json in Resources */,
+				BAEB737527E248AE004EEE65 /* Assets.xcassets in Resources */,
+				BAEB737327E248AD004EEE65 /* Main.storyboard in Resources */,
+				BAFAF33E284D017200810BC0 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09EF16414ECC90DC9E7DBAF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heysen Taxi/Pods-Heysen Taxi-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heysen Taxi/Pods-Heysen Taxi-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Heysen Taxi/Pods-Heysen Taxi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DEE35D8AAAB6E78F7C45B10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Heysen Taxi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		610CE2F974971C3ADCCB6AE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heysen Taxi/Pods-Heysen Taxi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heysen Taxi/Pods-Heysen Taxi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Heysen Taxi/Pods-Heysen Taxi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAEB736427E248AD004EEE65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA415D6627EA3011005889DE /* TarrifVc.swift in Sources */,
+				BAEB73E727E24BC3004EEE65 /* ImagePicker.swift in Sources */,
+				BA69059D27E4FFE1007D8BD5 /* HomePageVc.swift in Sources */,
+				BA40BDD027E70167001BE4A2 /* BaseModel.swift in Sources */,
+				BAEB73BF27E24B08004EEE65 /* Userdefaults+Ext.swift in Sources */,
+				BA3C05B227FB705500BA75B5 /* AddAddressVc.swift in Sources */,
+				BA40BDDD27E7145E001BE4A2 /* OtpVm.swift in Sources */,
+				BA5015E127F3808C00BD3058 /* ConfirmBookingVc.swift in Sources */,
+				BA3B283F27EB7B9B00BDA152 /* BookingVc.swift in Sources */,
+				BA415D6F27EA3977005889DE /* TerrifTvc.swift in Sources */,
+				9040C838283A993700111602 /* ProgressBar.swift in Sources */,
+				BA40BDD727E7035F001BE4A2 /* LoginVm.swift in Sources */,
+				BAEB73C227E24B08004EEE65 /* AppStoryboard.swift in Sources */,
+				BA6905A027E4FFFB007D8BD5 /* HomePageContentVc.swift in Sources */,
+				BA415D6A27EA3223005889DE /* TarrifModel.swift in Sources */,
+				BA4FF74427EF356F0014690A /* FAQTvc.swift in Sources */,
+				BAEB73E427E24BC3004EEE65 /* LocationManager.swift in Sources */,
+				BA3C0A2C27E8DB030077F749 /* FAQVm.swift in Sources */,
+				BAEB73E227E24BC3004EEE65 /* ApiclientError.swift in Sources */,
+				BAEB73B727E24AA4004EEE65 /* ApiManager.swift in Sources */,
+				BA4FF74127EEFB110014690A /* LocationModel.swift in Sources */,
+				BAC9225B2813CF940066B219 /* UIview+Ext.swift in Sources */,
+				BA40BDE427E72458001BE4A2 /* BookingVm.swift in Sources */,
+				BA3B284627EB86F700BDA152 /* FareListModel.swift in Sources */,
+				BAE8564D2942D47B00CC2A0E /* ConfirmBookingModel.swift in Sources */,
+				BA40BDDA27E70AE0001BE4A2 /* SignUpVm.swift in Sources */,
+				BA3B9BCC27FE03ED0059901F /* EstimationModel.swift in Sources */,
+				BAEB740627E25901004EEE65 /* OTPVc.swift in Sources */,
+				BAFE4FC02829896B007C145C /* ConatctUsVc.swift in Sources */,
+				BAEB73E627E24BC3004EEE65 /* MultipleImagePicker.swift in Sources */,
+				BA3B283B27EB770500BDA152 /* HomePageVm.swift in Sources */,
+				BA314B3427F20EE100433958 /* HistoryTvc.swift in Sources */,
+				BAEB73E827E24BC3004EEE65 /* Constant.swift in Sources */,
+				BAEB73C127E24B08004EEE65 /* Notification.swift in Sources */,
+				BA415D5F27EA27E2005889DE /* ProfileModel.swift in Sources */,
+				BAEB73C027E24B08004EEE65 /* UIViecontrollers+Ext.swift in Sources */,
+				BA415D6227EA2BAC005889DE /* ProfileVc.swift in Sources */,
+				BAEB740027E258E0004EEE65 /* LoginVc.swift in Sources */,
+				BAEB73E327E24BC3004EEE65 /* Resources.swift in Sources */,
+				BAEB73E527E24BC3004EEE65 /* Alerter.swift in Sources */,
+				BA3B284327EB7D8400BDA152 /* BookingModel.swift in Sources */,
+				BA3C0A2F27E8DD190077F749 /* FAQModel.swift in Sources */,
+				BAEB740327E258F2004EEE65 /* SignUPVc.swift in Sources */,
+				BAEB741D27E260CA004EEE65 /* HomeTBc.swift in Sources */,
+				BA3B283827EB736200BDA152 /* EditProfileVc.swift in Sources */,
+				BA4FF73D27EEF7C80014690A /* AddressLocTvc.swift in Sources */,
+				BA3C0A2127E8D84B0077F749 /* FAQVc.swift in Sources */,
+				BAEB73B627E24AA4004EEE65 /* AppDelegate.swift in Sources */,
+				BAEB73B827E24AA4004EEE65 /* Switcher.swift in Sources */,
+				BA4FF73A27EEF78B0014690A /* AddressLocVc.swift in Sources */,
+				BA40BDE027E7221A001BE4A2 /* ProfileVm.swift in Sources */,
+				BAEB73E927E24BC3004EEE65 /* UrlNetwork.swift in Sources */,
+				BA3B284927EB8AAA00BDA152 /* HomePageTvc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BAEB737127E248AD004EEE65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAEB737227E248AD004EEE65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAEB737627E248AE004EEE65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAEB737727E248AE004EEE65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAEB737A27E248AE004EEE65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAEB737B27E248AE004EEE65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAEB737D27E248AE004EEE65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4988DD492C4823AB0F2B34 /* Pods-Heysen Taxi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Heysen Taxi/Heysen Taxi.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 7BWKDU9SD5;
+				INFOPLIST_FILE = "Heysen Taxi/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wallet.MKSTaxi-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAEB737E27E248AE004EEE65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E8CA6ED054722CEAD6DB550 /* Pods-Heysen Taxi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Heysen Taxi/Heysen Taxi.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 7BWKDU9SD5;
+				INFOPLIST_FILE = "Heysen Taxi/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wallet.MKSTaxi-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAEB736327E248AD004EEE65 /* Build configuration list for PBXProject "Heysen Taxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAEB737A27E248AE004EEE65 /* Debug */,
+				BAEB737B27E248AE004EEE65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAEB737C27E248AE004EEE65 /* Build configuration list for PBXNativeTarget "Heysen Taxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAEB737D27E248AE004EEE65 /* Debug */,
+				BAEB737E27E248AE004EEE65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAEB736027E248AD004EEE65 /* Project object */;
+}
